@@ -22,7 +22,7 @@ const MovieList = () => {
   return (
     <div className='px-4 sm:px-10' >
       <h1 className='text-white text-3xl font-semibold mb-5'>Popular Movies</h1>
-      <div className='grid grid-cols-2 sm:grid-cols-6 gap-2 sm:gap-10 flex-wrap' >
+      <div className='grid grid-cols-2 sm:grid-cols-6 gap-2 sm:gap-5 flex-wrap' >
         {movieList && movieList.length > 0 && movieList.map((movie, index) => (
           <div key={index} className="flex">
             {/* {movie.title} */}
@@ -37,12 +37,12 @@ const MovieList = () => {
       <br></br>
 
       <h1 className='text-white text-3xl font-semibold mb-5'>Kids Movies</h1>
-      <div className='grid grid-cols-2 sm:grid-cols-6 gap-2 sm:gap-10 flex-wrap' >
+      <div className='grid grid-cols-2 sm:grid-cols-6 gap-2 sm:gap-5 flex-wrap' >
         {kidsMovies && kidsMovies.length > 0 && kidsMovies.map((movie, index) => (
           <div key={index} className="flex">
             {/* {movie.title} */}
             <div>
-              <img src={`https://image.tmdb.org/t/p/w500/${movie.backdrop_path}`} alt="" width={300} className="sm:rounded-m transition duration-500 ease-in-out hover:-translate-y-8 hover:scale-110  cursor-pointer" />
+              <img src={`https://image.tmdb.org/t/p/w500/${movie.backdrop_path}`} alt="" width={300} className="rounded-none sm:rounded-md transition duration-500 ease-in-out hover:-translate-y-8 hover:scale-110  cursor-pointer" />
             </div>
           </div>
         ))
@@ -52,12 +52,12 @@ const MovieList = () => {
       <br></br>
 
       <h1 className='text-white text-3xl font-semibold mb-5'>Drama Movies</h1>
-      <div className='grid grid-cols-2 sm:grid-cols-6 gap-2 sm:gap-10 flex-wrap' >
+      <div className='grid grid-cols-2 sm:grid-cols-6 gap-2 sm:gap-5 flex-wrap' >
         {dramaMovies && dramaMovies.length > 0 && dramaMovies.map((movie, index) => (
           <div key={index} className="flex">
             {/* {movie.title} */}
             <div>
-              <img src={movie.backdrop_path ? `https://image.tmdb.org/t/p/w500/${movie.backdrop_path}` : sunImage} alt="" width={300} className="sm:rounded-m transition duration-500 ease-in-out hover:-translate-y-8 hover:scale-110  cursor-pointer" />
+              <img src={movie.backdrop_path ? `https://image.tmdb.org/t/p/w500/${movie.backdrop_path}` : sunImage} alt="" width={300} className="rounded-none sm:rounded-md transition duration-500 ease-in-out hover:-translate-y-8 hover:scale-110  cursor-pointer" />
             </div>
           </div>
         ))
