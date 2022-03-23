@@ -27,7 +27,7 @@ const MovieList = () => {
           <div key={index} className="flex">
             {/* {movie.title} */}
             <div>
-              <img src={movie.backdrop_path ? `https://image.tmdb.org/t/p/w500/${movie.backdrop_path}` : sunImage} alt="" width={300} className="sm:rounded-md transition duration-500 ease-in-out hover:-translate-y-8 hover:scale-110  cursor-pointer" />
+              <img src={movie.backdrop_path ? `https://image.tmdb.org/t/p/w500/${movie.backdrop_path}` : sunImage} alt="" width={300} className="rounded-none sm:rounded-md transition duration-500 ease-in-out hover:-translate-y-8 hover:scale-110  cursor-pointer" />
             </div>
           </div>
         ))
